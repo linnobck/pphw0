@@ -16,7 +16,20 @@ def find_palindromes(words):
         list of words that are palindromes from the given word list, in
         alphabetical order
     """
-    # REPLACE THIS COMMENT WITH YOUR CODE
+# initialize empty array for palindromes
+    palindromes = []
+
+# loop through given list and check for palindromes
+    for i in words: 
+        if "".join(reversed(i)) == i:
+            # only add non-dublicates to palindrome list
+            if i not in palindromes:
+                palindromes.append(i)
+
+# sort the palindromes alphabetically
+    palindromes = sorted(palindromes)
+
+    return(palindromes)
 
 
 def main():
@@ -27,12 +40,11 @@ def main():
     if len(sys.argv) == 1:
         print("Usage: python3 palindromes.py <words>")
         sys.exit()
-
+    
     # if there are more than 1 parameters, use the find_palindromes
     # # function to print those that are palindromes
     for pal in find_palindromes(sys.argv[1:]):
         print(pal)
-
 
 if __name__ == "__main__":
     # this statement ensures that our main function only runs if the program

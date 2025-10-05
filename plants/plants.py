@@ -22,6 +22,18 @@ def make_plant(height: int) -> str:
 
     See the README for examples.
     """
+    lines = []
+    for i in height:
+        if i == 1:
+            lines.append(" " + {FLOWER})
+        if i == 2:
+            lines.append({LEAF} + {STEM} + {LEAF})
+        if i % 3 == 0:
+            lines.append({LEAF} + {STEM} + {LEAF})
+        else:
+            lines.append(" " + {STEM})
+
+
     plant = ""
     return plant
 
