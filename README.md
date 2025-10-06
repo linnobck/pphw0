@@ -1,44 +1,5 @@
 # 51042 - Programming Assignment 0
 
-This homework is shorter than most, we still recommend starting early so that if you run into setup issues you have plenty of time to speak to course staff.
-
-Goals:
-
-- Ensure you have a working development environment.
-- Familiarize yourself with the course software: uv, pytest, GitHub, Gradescope.
-- Gain practice writing short Python functions.
-
-## Part 0. Setup
-
-1. If you haven't set up your environment yet, see [Using uv](https://mpcs51042.netlify.app/guides/uv/) from the course site to get started.
-    While you are always free to develop in a setup of your choosing, but due to the infinite possible variations stemming from different operating systems, versions of Python, etc. we will not be able to provide support for issues you may run into specific to your local environment.
-2. If you haven't already gotten set up with GitHub, you'll need to follow the steps at [Git Basics](https://uchicago-cs.github.io/student-resource-guide/tutorials/git-basics.html) from the UChicago CS Student Resource Guide.
-3. Every assignment will begin with the same process, follow the steps at [checking out an assignment](https://mpcs51042.jpt.sh/coursework/programming/#checking-out-an-assignment).
-4. Once you have the assignment cloned locally, run `uv sync` from within the assignment directory. This will install the necessary libraries.
-
-## Working on the Assignment
-
-This assignment is comprised of four short problems, you may complete them in any order.
-
-For each assignment you will be writing some Python, take some time on this first assignment to read through the 
-[style guide](https://uchicago-cs.github.io/student-resource-guide/style-guide/python.html).
-
-Writing readable code is important, and this guide is a significant portion of our grading.
-
-You may use a linter such as `ruff` to assist you, but be sure to follow documentation and variable naming rules, which linters typically cannot help with.
-
-### Running `pytest`
-
-Each problem comes with some helpful tests.
-These are not guaranteed to be comprehensive, it may benefit you to consider other cases as well.
-
-You can run `uv run pytest` from this directory to run all tests for the homework.
-
-To just run a subset of tests, you can specify the directory name, e.g. `uv run pytest collatz`.
-
-See [pytest tips on the course site](https://mpcs51042.netlify.app/coursework/programming/#pytest-tips) for helpful tips.
-
-**Remember, you will be using these tools a lot, taking a few minutes to learn them on this first assignment will be worth your time.**
 
 ## Problems
 
