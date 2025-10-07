@@ -16,7 +16,7 @@ def find_palindromes(words):
         list of words that are palindromes from the given word list, in
         alphabetical order
     """
-# initialize empty array for palindromes
+# initialize empty list for palindromes
     palindromes = []
 
 # loop through given list and check for palindromes
