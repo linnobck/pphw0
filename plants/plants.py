@@ -22,19 +22,22 @@ def make_plant(height: int) -> str:
 
     See the README for examples.
     """
-    lines = []
-    for i in height:
-        if i == 1:
-            lines.append(" " + {FLOWER})
-        if i == 2:
-            lines.append({LEAF} + {STEM} + {LEAF})
-        if i % 3 == 0:
-            lines.append({LEAF} + {STEM} + {LEAF})
+    lines = []      # to store all the flower parst
+    growing = 1     # initialize variable to keep track of how tall the flower grows
+    while growing <= height:
+        # adding the flower parts depending on what number line they are on
+        if growing == 1:
+            lines.append(f" {FLOWER}")
+        elif growing == 2:
+            lines.append(f"{LEAF}{STEM}{LEAF}")
+        elif (growing -1) % 3 == 0:
+            lines.append(f"{LEAF}{STEM}{LEAF}")
         else:
-            lines.append(" " + {STEM})
+            lines.append(f" {STEM}")
+        growing +=1
 
-
-    plant = ""
+    # assemble and return plant
+    plant = "\n".join(lines) + "\n"
     return plant
 
 
